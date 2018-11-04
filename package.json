@@ -1,11 +1,14 @@
 {
-  "name": "preact-migrate",
+  "name": "preact-migrate-x",
   "version": "0.0.0",
   "description": "A codemod to convert your preact 8 codebase to preact X",
   "main": "lib/index.js",
   "author": "Ward Peeters <ward@coding-tech.com>",
   "license": "MIT",
   "private": false,
+  "bin": {
+    "preact-migrate-x" : "./bin/cli.js"
+  },
   "scripts": {
     "test": "jest",
     "prepublish": "npm run test"
@@ -16,10 +19,17 @@
   "dependencies": {
     "jscodeshift": "^0.5.1"
   },
+  "files": [
+    "bin/cli.js",
+    "lib/**/*.js",
+    "!lib/**/__testfixtures__/**/*.js",
+    "!lib/**/__tests__/**/*.js"
+  ],
   "jest": {
     "testEnvironment": "node",
     "roots": [
-      "lib/codemod"
+      "lib/codemods",
+      "bin"
     ]
   }
 }
