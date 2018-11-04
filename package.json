@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "bin": {
-    "preact-migrate-x" : "./bin/cli.js"
+    "preact-migrate-x": "./bin/cli.js"
   },
   "scripts": {
     "test": "jest",
@@ -17,7 +17,8 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
-    "jscodeshift": "^0.5.1"
+    "jscodeshift": "^0.5.1",
+    "nomnom": "^1.8.1"
   },
   "files": [
     "bin/cli.js",
