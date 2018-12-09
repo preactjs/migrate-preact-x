@@ -5,7 +5,7 @@ A collection of codemods to update your compatibility of preact to version X.
 
 - [x] convert default imports into named imports
 - [x] convert h pragma into createElement
-- [ ] Convert attributes into props
+- [x] Convert attributes & nodeName into props (we only change the ones we are 100% certain of)
 
 ## Usage
 ```
