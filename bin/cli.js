@@ -7,7 +7,7 @@ const Runner = require('jscodeshift/dist/Runner');
 const path = require('path');
 const pkg = require('../package.json');
 const opts = require('nomnom')
-  .script('jscodeshift')
+  .script('migrate-preact-x')
   .options({
     path: {
       position: 0,
