@@ -1,4 +1,7 @@
 # Migrate Preact X
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/preactjs/migrate-preact-x.svg)](https://greenkeeper.io/)
+
 A collection of codemods to update your compatibility of preact to version X.
 
 ## List of codemods
